@@ -1,0 +1,12 @@
+#! /usr/bin/env php
+
+<?php
+
+use Acme\LocationService;
+use Symfony\Component\Console\Application;
+
+require 'vendor/autoload.php';
+
+$app = new Application('Lucas Service', '1.0');
+$app->add(new LocationService());
+$app->run();
